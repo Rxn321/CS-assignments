@@ -1,3 +1,4 @@
+//(Intermediate) Decision making
 import java.util.Scanner;
 
 public class as {
@@ -60,7 +61,7 @@ public class as {
 			if (rball == 2)
 				System.out.println("It is decidedly so.");
 			if (rball == 3)
-				System.out.println("Yes – definitely.");
+				System.out.println("Yes â€“ definitely.");
 			if (rball == 4)	
 				System.out.println("Without a doubt.");
 			if (rball == 5)	
