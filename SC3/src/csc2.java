@@ -1,3 +1,4 @@
+//(Intermediate) Java - Variables and Data-Types
 import java.util.Scanner;
 
 public class csc2 {
