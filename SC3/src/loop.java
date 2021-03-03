@@ -1,9 +1,8 @@
 //(Intermediate) Loops
-package p2;
 import java.util.Scanner;
 
 
-public class p2 {
+public class loop {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub}
@@ -26,24 +25,23 @@ public class p2 {
 			    System.out.print(j + " "); }  
 					System.out.println(" "); } 
 //Question 3
-		/*System.out.println("Question 3");
+		System.out.println("Question 3");
 		System.out.println("Let's add some numbers! [Type a negative number to quit]");
 	
 		int q;
 		int t;
+		int sum = 0;
+		int finalSum = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("add:");	
 		q = sc.nextInt(); 	
-		System.out.println("add:");
-		t = sc.nextInt();
-		 	while (q > 0) {
+		 	if (q < 0) {
 				System.out.println("add:");
-		int w =	q + t;
+					finalSum=sum + q;
 			t = sc.nextInt();
-		}
-	System.out.println(w);
-			*/
-				
+		 	}
+		 	System.out.println(finalSum);
+		 	
 //Question 4
 	System.out.println("Question 4");
 	System.out.println("What character do you want your bar made of?");
@@ -76,41 +74,31 @@ public class p2 {
 							System.out.print(chta + " "); }  
 						System.out.println(" "); } 
 //Question 6
-		System.out.println("Question 6");System.out.println("I've pick a random number between 1 and 100.");
-		System.out.println("Try to guess it!");
+	System.out.println("Question 6");System.out.println("I've pick a random number between 1 and 100.");
+	System.out.println("Try to guess it!");
 		
-			int max = 100;
-			int min = 1;
-			int rndom =(int)(Math.random()* (max - min + 1) + min);
-				System.out.println("What is your guess?");
-				
-				Scanner guss = new Scanner(System.in);
-				int guess=guss.nextInt();
-				
-					while(guess > rndom) {
-						
-						System.out.println("this is too high");
-						System.out.println("What is your guess?");
-						
+		int max = 100;
+		int min = 1;
+		int rndom =(int)(Math.random()* (max - min + 1) + min);
+// System.out.println(rndom);	
+		System.out.println("What is your guess?");
+			int guessCount = 1;
+			Scanner guss = new Scanner(System.in);
+			int guess=guss.nextInt();
+			while(guess != rndom ) {
+				if(guess > rndom) {						
+					System.out.println("this is too high");
+					System.out.println("What is your guess?");		
 					}
-						
-					while(guess < rndom) {
+					if(guess < rndom) {
 						System.out.println("this is too low");
-						System.out.println("What is your guess?");
-						
+						System.out.println("What is your guess?");		
 					}
-					
-					
-					
-			System.out.println("You've guess my number! Good job! It only took you tries");
-						
-						
-				
-				
-				
-						}
-				
+					guess = guss.nextInt();
+					guessCount++;
 				}
-
-					
+			System.out.println("You've guess my number! Good job! It only took you "+guessCount+" tries");
+						
+						}
+				}	
 		}
