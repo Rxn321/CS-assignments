@@ -25,30 +25,28 @@ public class loop {
 			    System.out.print(j + " "); }  
 					System.out.println(" "); } 
 //Question 3
-		System.out.println("Question 3");
-		System.out.println("Let's add some numbers! [Type a negative number to quit]");
-	
+	System.out.println("Question 3");
+	System.out.println("Let's add some numbers! [Type a negative number to quit]");
 		int q;
-		int t;
-		int sum = 0;
-		int finalSum = 0;
+		int finalSum=0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("add:");	
-		q = sc.nextInt(); 	
-		 	if (q < 0) {
-				System.out.println("add:");
-					finalSum=sum + q;
-			t = sc.nextInt();
-		 	}
+			q = sc.nextInt(); 	
+				while (q > 0) {
+					finalSum += q;
+						System.out.println("add:");
+						q = sc.nextInt();
+					}
+				
 		 	System.out.println(finalSum);
-		 	
+		 
 //Question 4
 	System.out.println("Question 4");
 	System.out.println("What character do you want your bar made of?");
 		Scanner ch = new Scanner(System.in);
-		String bar = ch.next();
+			String bar = ch.next();
 		System.out.println("How long is your bar?");
-		Scanner nu = new Scanner(System.in);
+			Scanner nu = new Scanner(System.in);
 			int blen = nu.nextInt();
 				int c;
 				int d;
@@ -63,8 +61,8 @@ public class loop {
 	System.out.println("What character do you want your triangle made of?");
 		Scanner cht = new Scanner(System.in);
 			String chta = cht.next();
-	System.out.println("How tall do you want your triangle made of?");
-		Scanner h =	new Scanner (System.in);
+				System.out.println("How tall do you want your triangle made of?");
+					Scanner h =	new Scanner (System.in);
 		int high;
 			high = h.nextInt();
 				int n;
@@ -76,7 +74,6 @@ public class loop {
 //Question 6
 	System.out.println("Question 6");System.out.println("I've pick a random number between 1 and 100.");
 	System.out.println("Try to guess it!");
-		
 		int max = 100;
 		int min = 1;
 		int rndom =(int)(Math.random()* (max - min + 1) + min);
@@ -99,6 +96,10 @@ public class loop {
 				}
 			System.out.println("You've guess my number! Good job! It only took you "+guessCount+" tries");
 						
+				
 						}
-				}	
+				
+				}
+
+					
 		}
