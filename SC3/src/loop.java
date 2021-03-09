@@ -96,10 +96,6 @@ public class loop {
 				}
 			System.out.println("You've guess my number! Good job! It only took you "+guessCount+" tries");
 						
-				
 						}
-				
-				}
-
-					
+				}		
 		}
