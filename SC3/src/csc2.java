@@ -22,7 +22,7 @@ public class csc2 {
 		double threeB=(int)0.999;
 		System.out.println(threeB);
 			//(c)
-		System.out.println("Syntax error");
+		System.out.println("Syntax error");//int x = (double) 8; is a error because we already declare x to be a integer, so it cannot convert to double  
 			//(d)
 		int threeD=(int)4.999/(int)2.5;
 		System.out.println(threeD);
@@ -98,4 +98,3 @@ public class csc2 {
 				}
 		}
 }
-
