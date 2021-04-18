@@ -14,12 +14,11 @@ public class loop {
 		while(i>=10) {
 			System.out.println("i is " +i);
 			i--;
-		}
+	}
 //Question 2
 			System.out.println("Question 2");
 			int a = 1;
 			int j = 1;
-	
 				for (a = 1; a <= 10; a++) { 
 					for (j = 1 ; j <= a; j++) { 
 			    System.out.print(j + " "); }  
@@ -36,7 +35,7 @@ public class loop {
 					finalSum += q;
 						System.out.println("add:");
 						q = sc.nextInt();
-					}
+		}
 				
 		 	System.out.println(finalSum);
 		 
