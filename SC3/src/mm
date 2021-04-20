@@ -1,0 +1,35 @@
+package strings;
+
+public class StringsQ3 {
+
+
+		public static void main(String[] args) {
+
+			String sentence = "Yet another sample sentence?";
+		 countChar();	
+		}
+			
+			 public static void countChar() {
+			        String string = "All that glitters is not gold. In William Shakespeare's Hamlet,to be, or not to be, that is the question. In the 21st century, to code, or not to code, that is the challenge.";
+			        int counters[] = new int[256]; 
+			        for (final char c : string.toCharArray())
+			        {   if(c!=' ')
+			            counters[c]++;
+			        }
+			        int maxCounter = 0;
+			        for (final int counter : counters)
+			        {
+			            if (maxCounter < counter)
+			            {
+			                maxCounter = counter;
+			            }
+			        }
+			        for (int i = 0; i < counters.length; i++)
+			        {
+			            if (counters[i] == maxCounter)
+			            {
+			                System.out.printf("%c has %d occurences.\n", i, counters[i]);
+			            }
+			        }
+			    }
+			}
