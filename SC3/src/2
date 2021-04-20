@@ -1,0 +1,32 @@
+package strings;
+
+public class Strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Question 1
+		System.out.println("Question 1 Vowel Counter ");
+		String sentence = "Example sentence.";
+		System.out.println("Sentence length:"+sentence.length());
+		int vowelCount = 0;
+
+		vowelCount = 0;
+		for(int i=0; i<sentence.length(); i++) {
+			char ch = sentence.charAt(i);
+			if( ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='y' )
+				vowelCount++;
+		}
+		System.out.println("There are "+vowelCount+" vowels in the sentence.");
+		System.out.println("");
+		System.out.println("Question 2 Reverse Sentence");
+				
+		//Question 2
+		String sentence1 = "Another example sentence.";
+		for (int i=sentence1.length()-1; i>=0; i--) {
+			System.out.print(sentence1.charAt(i));
+			
+
+		}
+}				
+
+}
